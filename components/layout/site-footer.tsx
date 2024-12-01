@@ -3,15 +3,13 @@ import Link from "next/link";
 import { NewsletterForm } from "@/components/email/newsletter-form";
 import { Icons } from "@/components/icons/icons-new";
 import { ModeToggle } from "@/components/mode-toggle";
-import { Shell } from "@/components/shells/shell";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export function SiteFooter() {
   return (
-    <footer className="w-full border-t bg-background">
-      <Shell>
+    <footer className="w-full border-t bg-background p-10">
         <section
           id="footer-content"
           aria-labelledby="footer-content-heading"
@@ -80,7 +78,6 @@ export function SiteFooter() {
               Tanssi-xyz
               <span className="sr-only">Tanssi-xyz</span>
             </Link>
-            .
           </div>
           <div className="flex items-center space-x-1">
             <Link
@@ -99,8 +96,7 @@ export function SiteFooter() {
             </Link>
             <ModeToggle />
           </div>
-        </section>
-      </Shell>
+        </section> 
     </footer>
   );
 }
